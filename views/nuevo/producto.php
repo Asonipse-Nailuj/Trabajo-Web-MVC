@@ -15,32 +15,32 @@ require "views/header.php";
 
       <div class="md-form mb-3 col-6">
         <label data-error="wrong" data-success="right" for="id">Codigo:</label>
-        <input type="number" class="form-control" name="id" id="id">
+        <input type="number" class="form-control" name="id" id="id" required>
       </div>
 
       <div class="md-form col-6">
         <label data-error="wrong" data-success="right" for="nombre">Nombre:</label>
-        <input type="text" class="form-control" name="nombre" id="nombre">
+        <input type="text" class="form-control" name="nombre" id="nombre" required>
       </div>
 
       <div class="md-form mb-3 col-6">
         <label data-error="wrong" data-success="right" for="descripcion">Descripción:</label>
-        <textarea class="form-control" name="descripcion" id="descripcion" cols="12" rows="2"></textarea>
+        <textarea class="form-control" name="descripcion" id="descripcion" cols="12" rows="2" required></textarea>
       </div>
 
       <div class="md-form mb-3 col-6">
         <label data-error="wrong" data-success="right" for="precio">Precio:</label>
-        <input type="number" class="form-control" name="precio" id="precio">
+        <input type="number" class="form-control" name="precio" id="precio" required>
       </div>
 
       <div class="md-form mb-3 col-6">
         <label data-error="wrong" data-success="right" for="cantidad">Cantidad:</label>
-        <input type="text" class="form-control" name="cantidad" id="cantidad">
+        <input type="text" class="form-control" name="cantidad" id="cantidad" required>
       </div>
 
       <div class="md-form mb-3 col-6">
         <label data-error="wrong" data-success="right" for="categoria">Categoria:</label>
-        <select name="categoria" id="categoria" class="form-control">
+        <select name="categoria" id="categoria" class="form-control" required>
           <option value="" selected>Seleccione una categoria</option>
           <option value="">#</option>
           <option value="">#</option>

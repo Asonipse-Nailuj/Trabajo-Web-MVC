@@ -43,7 +43,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="<?php echo constant('URL'); ?>public/images/logo.png" class="logo" alt=""></a>
+                    <a class="navbar-brand" href="<?php echo constant('URL'); ?>main"><img src="<?php echo constant('URL'); ?>public/images/logo.png" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
