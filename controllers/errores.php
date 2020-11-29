@@ -1,6 +1,6 @@
 <?php
 
-class Notfound extends Controller
+class Erorres extends Controller
 {
 
     function __construct()
