@@ -7,6 +7,6 @@ class Erorres extends Controller
     {
         parent::__construct();
         $this->view->mensaje = "Error al cargar la pagina o la pagina no existe";
-        $this->view->render("notfound/index");
+        $this->view->render("errores/index");
     }
 }
