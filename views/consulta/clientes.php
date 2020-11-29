@@ -1,5 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="es">
+<!-- Basic -->
+
+<!-- http://localhost/Trabajo-Web-MVC/views/main/index.php -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,10 +29,15 @@
     <link rel="stylesheet" href="../../public/css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../public/css/custom.css">
+
     <!-- Font Awesone CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 
-</head>
+</head>   
 <body>
 
     <?php 
@@ -85,7 +94,8 @@
      require "../footer.php";
 
     ?>
-      <!-- ALL JS FILES -->
+
+    <!-- ALL JS FILES -->
     <script src="../../public/js/jquery-3.2.1.min.js"></script>
     <script src="../../public/js/popper.min.js"></script>
     <script src="../../public/js/bootstrap.min.js"></script>

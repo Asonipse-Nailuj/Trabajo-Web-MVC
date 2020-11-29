@@ -1,6 +1,4 @@
 
-<body>
-
     <!-- Start Main Top -->
     <header class="main-header">
         <!-- Start Navigation -->
@@ -11,7 +9,7 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="../images/logo.png" class="logo" alt=""></a>
+                    <a class="navbar-brand" href="index.html"><img src="public/images/logo.png" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
@@ -23,15 +21,15 @@
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Clientes</a>
                             <ul class="dropdown-menu">
-                                <li><a href="../nuevo/cliente.php">Registrar</a></li>
-                                <li><a href="../consulta/clientes.php">Consultar</a></li>
+                                <li><a href="views/nuevo/cliente.php">Registrar</a></li>
+                                <li><a href="views/consulta/clientes.php">Consultar</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Productos</a>
                             <ul class="dropdown-menu">
-                                <li><a href="../nuevo/producto.php">Registrar</a></li>
-                                <li><a href="../consulta/productos.php">Consultar</a></li>
+                                <li><a href="views/nuevo/producto.php">Registrar</a></li>
+                                <li><a href="views/consulta/productos.php">Consultar</a></li>
                             </ul>
                         </li>
                     </ul>
