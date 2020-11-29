@@ -37,7 +37,7 @@ require "views/header.php";
         <input type="text" class="form-control" name="direccion" id="direccion" required>
       </div>
 
-      <input type="submit" class="btn btn-success btn-lg mt-4" name="enviar" value="Guardar">
+      <button type="submit" class="btn hvr-hover text-white btn-lg" name="btnEnviar">Guardar</button>
     </form>
   </div>
 </div>
