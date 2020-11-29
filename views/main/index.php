@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <!-- Basic -->
 
 <!-- http://localhost/Trabajo-Web-MVC/views/main/index.php -->
