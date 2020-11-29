@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../public/css/mis_estilos.css">
-</head>
-<body class="bodyerrores">
-    
+<?php
+$tittle = "Error";
+
+require "views/header.php";
+?>
+
+<div class="card shadow my-5 ml-5 mr-5" align="center">
     <h1>404</h1>
     <p>La pagina no existe :(</p>
+</div>
 
+<?php
 
-</body>
-</html>
+require "views/footer.php";
+
+?>
