@@ -6,7 +6,7 @@ require "views/header.php";
 
 <div class="card shadow my-5 ml-5 mr-5" align="center">
   <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">Registrar Cliente</h6>
+    <h2 class="m-0 font-weight-bold text-primary">Registrar Cliente</h2>
   </div>
   <div class="card-body">
     <!-- FORM -->
@@ -37,7 +37,7 @@ require "views/header.php";
         <input type="text" class="form-control" name="direccion" id="direccion" required>
       </div>
 
-      <input type="submit" class="btn btn-primary mt-4" name="enviar" value="Guardar">
+      <input type="submit" class="btn btn-success btn-lg mt-4" name="enviar" value="Guardar">
     </form>
   </div>
 </div>
