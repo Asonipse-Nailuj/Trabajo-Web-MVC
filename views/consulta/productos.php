@@ -1,42 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-<!-- Basic -->
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<?php $tittle = "Productos" ?>
 
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Site Metas -->
-    <title>Productos</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="../../public/images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="../../public/images/apple-touch-icon.png">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../public/css/bootstrap.min.css">
-    <!-- Site CSS -->
-    <link rel="stylesheet" href="../../public/css/style.css">
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="../../public/css/responsive.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../../public/css/custom.css">
-
-    <!-- Font Awesone CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-</head>
-
-<body>
 
     <?php
 

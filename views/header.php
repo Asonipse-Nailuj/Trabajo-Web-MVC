@@ -1,4 +1,37 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<!-- Basic -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title><?php echo $tittle ?></title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="<?php echo constant('URL');?>public/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="<?php echo constant('URL');?>public/images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="<?php echo constant('URL');?>public/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="<?php echo constant('URL');?>public/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="<?php echo constant('URL');?>public/css/responsive.css">
+    <!-- Custom CSS -->
+
+    <!-- Font Awesone CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    
+</head>
+<body>
     <!-- Start Main Top -->
     <header class="main-header">
         <!-- Start Navigation -->
@@ -9,27 +42,27 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="public/images/logo.png" class="logo" alt=""></a>
+                    <a class="navbar-brand" href="#"><img src="<?php echo constant('URL');?>public/images/logo.png" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="nav-item active"><a class="nav-link" href="../main/index.php">Inicio</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="<?php echo constant('URL');?>main">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Carrito</a></li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Clientes</a>
                             <ul class="dropdown-menu">
-                                <li><a href="views/nuevo/cliente.php">Registrar</a></li>
-                                <li><a href="views/consulta/clientes.php">Consultar</a></li>
+                                <li><a href="<?php echo constant('URL');?>views/nuevo/cliente.php">Registrar</a></li>
+                                <li><a href="<?php echo constant('URL');?>views/consulta/clientes.php">Consultar</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Productos</a>
                             <ul class="dropdown-menu">
-                                <li><a href="views/nuevo/producto.php">Registrar</a></li>
-                                <li><a href="views/consulta/productos.php">Consultar</a></li>
+                                <li><a href="<?php echo constant('URL');?>views/nuevo/producto.php">Registrar</a></li>
+                                <li><a href="<?php echo constant('URL');?>views/consulta/productos.php">Consultar</a></li>
                             </ul>
                         </li>
                     </ul>
