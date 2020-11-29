@@ -1,5 +1,5 @@
 <?php
-require_once "controllers/notfound.php";
+require_once "controllers/errores.php";
 class App
 {
 
@@ -46,7 +46,7 @@ class App
                 $controller->render();
             }
         } else {
-            $controller = new Notfound();
+            $controller = new Erorres();
         }
     }
 }
