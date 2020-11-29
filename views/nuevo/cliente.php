@@ -1,10 +1,5 @@
-
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
-<!-- Basic -->
-
-<!-- http://localhost/Trabajo-Web-MVC/views/main/index.php -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,13 +25,8 @@
     <link rel="stylesheet" href="../../public/css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../public/css/custom.css">
-
     <!-- Font Awesone CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
 
 </head>
 <body>
@@ -47,50 +37,47 @@
 
     ?>
 
+    <div class="card shadow my-5 ml-5 mr-5" align="center">
+        <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold text-primary">Registrar Cliente</h6>
+        </div>
+        <div class="card-body">
+            <!-- FORM -->
+            <form ACTION="" METHOD="POST">
 
-    <div class="container-fluid my-5">
-	    <section class="container">
-	      	<div class="row">
-                <div class="table-responsive">
-                    <table class="table table table-bordered table-responsive-md table-striped text-center">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Codigo</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Descripcion</th>
-                                <th scope="col">Cantidad</th>
-                                <th scope="col">Precio</th>
-                                <th scope="col">Categoria</th>
-                                <th scope="col">Editar</th>
-                                <th scope="col">Eliminar</th>
+            <div class="md-form mb-3 col-6">
+                <label data-error="wrong" data-success="right" for="id">Identificación:</label>
+                <input type="number" class="form-control" name="id" id="id">
+              </div>
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Cell</td>
-                                <td>Cell</td>
-                                <td>Cell</td>
-                                <td>Cell</td>
-                                <td>Cell</td>
-                                <td>Cell</td>
-                                <td>
-                                    <button class="btn btn-primary btn-sm my-0">Editar</button>
-                                </td>              
-                                <td>
-                                    <button class="btn btn-danger btn-sm my-0">Eliminar</button>
-                                </td>               
-                            </tr>
-                            
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
+              <div class="md-form col-6">
+                <label data-error="wrong" data-success="right" for="nombre">Nombre:</label>
+                <input type="text" class="form-control" name="nombre" id="nombre">
+              </div>
+
+              <div class="md-form mb-3 col-6">
+                <label data-error="wrong" data-success="right" for="apellido">Apellido:</label>
+                <input type="text" class="form-control" name="apellido" id="apellido">
+              </div>
+
+              <div class="md-form mb-3 col-6">
+                <label data-error="wrong" data-success="right" for="telefono">Telefono:</label>
+                <input type="number" class="form-control" name="teleofon" id="telefono">
+              </div>
+              
+              <div class="md-form mb-3 col-6">
+                <label data-error="wrong" data-success="right" for="direccion">Direccion:</label>
+                <input type="text" class="form-control" name="direccion" id="direccion">
+              </div>
+
+              <input type="submit" class="btn btn-primary mt-4" name="enviar" value="Guardar">
+             </form>
+        </div>
     </div>
 
+
+
+    <!-- End Side Menu -->
     <?php 
 
      require "../footer.php";
@@ -113,5 +100,4 @@
     <script src="../../public/js/contact-form-script.js"></script>
     <script src="../../public/js/custom.js"></script>
 </body>
-
 </html>
