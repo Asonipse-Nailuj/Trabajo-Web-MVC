@@ -3,7 +3,6 @@ $tittle = "Inicio";
 
 require "views/header.php";
 ?>
-
 <!-- Start Top Search -->
 <div class="top-search">
     <div class="container">
