@@ -22,13 +22,14 @@ require "views/header.php";
                     </thead>
                     <tbody>
                         <?php
+                        $contador = 1;
                         foreach ($this->clientes as $row) {
                             $cliente = new Cliente();
                             $cliente = $row;
 
                         ?>
                             <tr>
-                                <td><?php echo $row->cod; ?></td>
+                                <td><?php echo $contador++; ?></td>
                                 <td><?php echo $row->cod; ?></td>
                                 <td><?php echo $row->nom; ?></td>
                                 <td><?php echo $row->ape; ?></td>
