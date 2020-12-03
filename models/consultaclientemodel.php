@@ -1,10 +1,8 @@
 
 <?php
-
-
 include_once "models/cliente.php";
 
-class ConsulClientetaModel extends Model{
+class ConsultaClienteModel extends Model{
 
   
   public function __construct(){
@@ -21,11 +19,11 @@ class ConsulClientetaModel extends Model{
 
       while ($row = $query->fetch()) {
         $item = new Cliente();
-        $item->codigo = $row['codigo'];
-        $item->nombre = $row['nombre'];
-        $item->apellido = $row['apellido'];
-        $item->direccion = $row['direccion'];
-        $item->telefono = $row['telefono'];
+        $item->cod = $row['codigo'];
+        $item->nom = $row['nombre'];
+        $item->ape = $row['apellido'];
+        $item->direc = $row['direccion'];
+        $item->tel = $row['telefono'];
 
 
 

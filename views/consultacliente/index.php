@@ -22,32 +22,32 @@ require "views/header.php";
                     </thead>
                     <tbody>
                         <?php
-
-                        include_once 'models/consultaclientemodel.php';
                         foreach ($this->clientes as $row) {
-                            $clientes = new Cliente();
-                            $clientes = $row;
+                            $cliente = new Cliente();
+                            $cliente = $row; 
+
                         ?>
-                            <tr id="fila-<?php echo $clientes->codigo; ?>">
-                                <td><?php echo $clientes->codigo; ?></td>
-                                <td><?php echo $clientes->nombre; ?></td>
-                                <td><?php echo $clientes->apellido; ?></td>
-                                <td><?php echo $clientes->direccion; ?></td>
-                                <td><?php echo $clientes->telefono; ?></td>
-                                <td><a href="<?php echo constant('URL') . 'consultacliente/verCliente/' . $clientes->codigo; ?>">Editar</a></td>
-                                <td><a href="#">Eliminar</a></td>
+                            <tr>
+                                <td><?php echo $row->cod; ?></td>
+                                <td><?php echo $row->cod; ?></td>
+                                <td><?php echo $row->nom; ?></td>
+                                <td><?php echo $row->ape; ?></td>
+                                <td><?php echo $row->direc; ?></td>
+                                <td><?php echo $row->tel; ?></td>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-md-9 col-md-offset-9 col-xs-12 text-right">
+                                            <div class="btn-group" role="group">
+                                                <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editarCliente<?php echo $row->cod; ?>"><i class="fas fa-edit"></i></button>
+                                                <button class="btn bg-danger text-white btn-sm eliminar_cliente" type="button" data-producto="<?php echo $row->cod; ?>"><i class="fas fa-trash"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                             </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-</div>
-
-
+                            
 <!-- Modal registrar cliente -->
-<div class="modal fade" id="editarCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="editarCliente<?php echo $row->cod; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -59,23 +59,23 @@ require "views/header.php";
             <div class="modal-body text-center">
                 <div>
                     <label for="codigo">Identificacíon:</label>
-                    <input class="form-control" type="number" name="codigoEdit" id="codigoEdit" value="" readonly>
+                    <input class="form-control" type="number" name="codigoEdit" id="codigoEdit" value="<?php echo $row->cod; ?>" readonly>
                 </div>
                 <div class="my-3">
                     <label for="nombreEdit">Nombre: </label>
-                    <input class="form-control" type="text" name="nombreEdit" id="nombreEdit" value="">
+                    <input class="form-control" type="text" name="nombreEdit" id="nombreEdit" value="<?php echo $row->nom; ?>">
                 </div>
                 <div class="my-3">
                     <label for="apellidoEdit">Apellido:</label>
-                    <input class="form-control" type="text" name="apellidoEdit" id="apellidoEdit" value="">
+                    <input class="form-control" type="text" name="apellidoEdit" id="apellidoEdit" value="<?php echo $row->ape; ?>">
                 </div>
                 <div class="my-3">
                     <label for="telefonEdit">Telefono:</label>
-                    <input class="form-control" type="text" name="telefonEdit" id="telefonEdit" value="">
+                    <input class="form-control" type="text" name="telefonEdit" id="telefonEdit" value="<?php echo $row->direc; ?>">
                 </div>
                 <div class="my-3">
                     <label for="direccionEdit">Dirección:</label>
-                    <input class="form-control" type="text" name="direccionEdit" id="direccionEdit" value="">
+                    <input class="form-control" type="text" name="direccionEdit" id="direccionEdit" value="<?php echo $row->tel; ?>">
                 </div>
             </div>
             <div class="modal-footer">
@@ -84,6 +84,15 @@ require "views/header.php";
             </div>
         </div>
     </div>
+</div>
+
+
+                        <?php } ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 </div>
 
 

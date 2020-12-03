@@ -6,25 +6,19 @@ class ConsultaCliente extends Controller
     function __construct()
     {
         parent::__construct();
+        $this->view->clientes = [];
     }
 
-	function render(){
-		$clientes = $this->model->get();
-		$this->view->clientes = $clientes;
+	function render()
+    {
 
-		$this->view->render('consulta/index');
+        
+        $clientes = $this->model->get();
+        $this->view->clientes = $clientes;
 
-	}
 
-    function verCliente($param = null){
+        $this->view->render("consultacliente/index");
+    }
 
-		$idAlumno = $param[0];
-		$alumno = $this->model->getById($idAlumno);
-
-		session_start();
-		$this->view->alumno = $alumno;
-		$this->view->mensaje = "";	
-		$this->view->render('consulta/detalle');
-
-	}
+   
 }
