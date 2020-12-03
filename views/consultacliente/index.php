@@ -21,24 +21,23 @@ require "views/header.php";
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>
-                                <div class="row">
-                                    <div class="col-md-9 col-md-offset-9 col-xs-12 text-right">
-                                        <div class="btn-group" role="group">
-                                            <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editarCliente"><i class="fas fa-edit"></i></button>
-                                            <button class="btn bg-danger text-white btn-sm" type="button" data-toggle="modal" data-target="#eliminar_cliente"><i class="fas fa-trash"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
+                        <?php
+
+                        include_once 'models/consultaclientemodel.php';
+                        foreach ($this->clientes as $row) {
+                            $clientes = new Cliente();
+                            $clientes = $row;
+                        ?>
+                            <tr id="fila-<?php echo $clientes->codigo; ?>">
+                                <td><?php echo $clientes->codigo; ?></td>
+                                <td><?php echo $clientes->nombre; ?></td>
+                                <td><?php echo $clientes->apellido; ?></td>
+                                <td><?php echo $clientes->direccion; ?></td>
+                                <td><?php echo $clientes->telefono; ?></td>
+                                <td><a href="<?php echo constant('URL') . 'consultacliente/verCliente/' . $clientes->codigo; ?>">Editar</a></td>
+                                <td><a href="#">Eliminar</a></td>
+                            </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>

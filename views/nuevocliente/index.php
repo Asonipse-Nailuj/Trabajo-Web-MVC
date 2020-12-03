@@ -43,8 +43,6 @@ require "views/header.php";
   </div>
 </div>
 
-
-
 <!-- End Side Menu -->
 <?php
 
