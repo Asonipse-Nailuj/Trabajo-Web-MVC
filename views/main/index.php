@@ -47,7 +47,7 @@ require "views/header.php";
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                    <h1 class="m-b-20"><strong>Bienvenido a <br> Freshshop</strong></h1>
+                        <h1 class="m-b-20"><strong>Bienvenido a <br> Freshshop</strong></h1>
                         <p class="m-b-40">Disfruta de la frescura del campo Colombiano.</p>
                         <p><a class="btn hvr-hover" href="#seccionCompras">Ir a Comprar</a></p>
                     </div>

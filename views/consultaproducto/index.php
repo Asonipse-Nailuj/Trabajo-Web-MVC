@@ -8,7 +8,7 @@ require "views/header.php";
     <section class="container">
         <div class="row">
             <div class="table-responsive">
-                <span id="mensaje"><?php echo $this->mensaje; ?></span>
+                <!-- <span id="mensaje"><?php echo $this->mensaje; ?></span> -->
                 <table class="table table-bordered table-responsive-md table-striped text-center">
                     <thead>
                         <tr>
