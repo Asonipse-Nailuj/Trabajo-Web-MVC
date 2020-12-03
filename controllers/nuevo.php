@@ -9,7 +9,7 @@ class Nuevo extends Controller{
     }
 
 
-    function nuevoCliente()
+    function registrarCliente()
     {
         $codigo = $_POST['id'];
         $nombre    = $_POST['nombre'];
@@ -17,11 +17,9 @@ class Nuevo extends Controller{
         $telefono  = $_POST['telefono'];
         $direccion  = $_POST['direccion'];
 
-
-
         $mensaje = "";
 
-        if ($this->model->insert(['cod' => $codigo, 'nom' => $nombre, 'ape' => $apellido, 'tel' => $telefono, 'direc' => $direccion])) {
+        if ($this->model->insertCliente(['cod' => $codigo, 'nom' => $nombre, 'ape' => $apellido, 'tel' => $telefono, 'direc' => $direccion])) {
             $mensaje = "Nuevo cliente creado";
         } else {
 

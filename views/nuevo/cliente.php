@@ -10,7 +10,7 @@ require "views/header.php";
   </div>
   <div class="card-body">
     <!-- FORM -->
-		<form action="<?php echo constant('URL'); ?>nuevo/nuevoCliente" method="POST">
+		<form action="<?php echo constant('URL'); ?>nuevo/registrarCliente" method="POST">
 
       <div class="md-form mb-5 col-3">
         <label data-error="wrong" data-success="right" for="id">Identificación:</label>
@@ -29,7 +29,7 @@ require "views/header.php";
 
       <div class="md-form mb-5 col-2">
         <label data-error="wrong" data-success="right" for="telefono">Telefono:</label>
-        <input type="number" class="form-control" name="teleofon" id="telefono" min="1" required>
+        <input type="number" class="form-control" name="telefono" id="telefono" min="1" required>
       </div>
 
       <div class="md-form mb-5 col-5">
