@@ -73,5 +73,6 @@
     <script src="<?php echo constant('URL');?>public/js/form-validator.min.js"></script>
     <script src="<?php echo constant('URL');?>public/js/contact-form-script.js"></script>
     <script src="<?php echo constant('URL');?>public/js/custom.js"></script>
+    <script src="<?php echo constant('URL');?>public/js/mi-codigo.js"></script>
 </body>
 </html>

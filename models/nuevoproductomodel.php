@@ -13,7 +13,7 @@ class NuevoProductoModel extends Model{
         $items = [];
 
         try {
-            $query = $this->db->connect()->query("SELECT id, nombre FROM categoria");
+            $query = $this->db->connect()->query("SELECT * FROM categoria");
 
             while ($row = $query->fetch()) {
                 $item = new Categoria();
