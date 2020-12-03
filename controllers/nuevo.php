@@ -32,10 +32,10 @@ class Nuevo extends Controller{
         $this->view->render('nuevo/cliente');
     }
 
-    // function nuevoProducto()
-    // {
-    //     $this->view->render("nuevo/producto");
-    // }
+    function nuevoProducto()
+    {
+        $this->view->render("nuevo/producto");
+    }
 }
 
 ?>
