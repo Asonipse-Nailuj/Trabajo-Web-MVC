@@ -26,10 +26,10 @@ class ConsultaCliente extends Controller
         $codigo     = $_POST["codigoEdit"];
         $nombre     = $_POST["nombreEdit"];
         $apellido   = $_POST["apellidoEdit"];
-        $direccion   = $_POST["direccionEdit"];
         $telefono   = $_POST["telefonoEdit"];
+        $direccion   = $_POST["direccionEdit"];
 
-        if ($this->model->update(["cod" => $codigo, "nom" => $nombre, "ape" => $apellido, "direc" => $direccion, "tel" => $telefono])) {
+        if ($this->model->update(["cod" => $codigo, "nom" => $nombre, "ape" => $apellido, "tel" => $telefono, "direc" => $direccion])) {
             $this->view->mensaje = "Cliente actualizado correctamente";
         } else {
             $this->view->mensaje = "No se pudo actualizar el cliente";

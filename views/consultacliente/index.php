@@ -73,16 +73,16 @@ require "views/header.php";
                                                 </div>
                                                 <div class="my-3">
                                                     <label for="telefonEdit">Telefono:</label>
-                                                    <input class="form-control" type="text" name="telefonoEdit" value="<?php echo $row->direc; ?>">
+                                                    <input class="form-control" type="number" name="telefonoEdit" value="<?php echo $row->tel; ?>">
                                                 </div>
                                                 <div class="my-3">
                                                     <label for="direccionEdit">Dirección:</label>
-                                                    <input class="form-control" type="text" name="direccionEdit" value="<?php echo $row->tel; ?>">
+                                                    <input class="form-control" type="text" name="direccionEdit" value="<?php echo $row->direc; ?>">
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                                <button type="button" class="btn btn-primary">Guardar Cambios</button>
+                                                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
                                             </div>
                                         </div>
                                     </div>

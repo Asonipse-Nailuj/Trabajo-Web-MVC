@@ -23,7 +23,6 @@ require "views/header.php";
                     </thead>
                     <tbody>
                         <?php
-                        $contador = 1;
                         foreach ($this->productos as $row) {
                             $producto = new Producto();
                             $producto = $row;

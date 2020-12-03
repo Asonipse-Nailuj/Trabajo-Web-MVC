@@ -11,7 +11,8 @@ class ConsultaClienteModel extends Model
     parent::__construct();
   }
 
-  public function get(){
+  public function get()
+  {
     // insertar datos en la BD
     $items = [];
 
@@ -40,36 +41,34 @@ class ConsultaClienteModel extends Model
   }
 
   public function update($item)
-    {
-        $query = $this->db->connect()->prepare("UPDATE cliente SET nombre = :nom, apellido = :ape, direccion = :direc, telefono = :tel WHERE codigo = :cod");
-        try {
-            $query->execute([
-                "cod" => $item["cod"],
-                "nom" => $item["nom"],
-                "ape" => $item["ape"],
-                "direc" => $item["direc"],
-                "tel" => $item["tel"],
-            ]);
+  {
+    $query = $this->db->connect()->prepare("UPDATE cliente SET nombre = :nom, apellido = :ape, telefono = :tel, direccion = :direc WHERE codigo = :cod");
+    try {
+      $query->execute([
+        "cod" => $item["cod"],
+        "nom" => $item["nom"],
+        "ape" => $item["ape"],
+        "tel" => $item["tel"],
+        "direc" => $item["direc"]
+      ]);
 
-            return true;
-        } catch (PDOException $e) {
-            return false;
-        }
+      return true;
+    } catch (PDOException $e) {
+      return false;
     }
+  }
 
-    public function delete($cod)
-    {
-        $query = $this->db->connect()->prepare("DELETE FROM cliente WHERE codigo = :cod");
-        try {
-            $query->execute(["cod" => $cod]);
+  public function delete($cod)
+  {
+    $query = $this->db->connect()->prepare("DELETE FROM cliente WHERE codigo = :cod");
+    try {
+      $query->execute(["cod" => $cod]);
 
-            return true;
-        } catch (PDOException $e) {
-            return false;
-        }
+      return true;
+    } catch (PDOException $e) {
+      return false;
     }
-
-    
+  }
 }
 
 ?>
