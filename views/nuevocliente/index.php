@@ -7,10 +7,11 @@ require "views/header.php";
 <div class="card shadow my-5 ml-5 mr-5" align="center">
   <div class="card-header py-3">
     <h2 class="m-0 font-weight-bold text-primary">Registrar Cliente</h2>
+    <span><?php echo $this->mensaje; ?></span>
   </div>
   <div class="card-body">
     <!-- FORM -->
-		<form action="<?php echo constant('URL'); ?>nuevo/registrarCliente" method="POST">
+		<form action="<?php echo constant('URL'); ?>nuevocliente/registrarCliente" method="POST">
 
       <div class="md-form mb-5 col-3">
         <label data-error="wrong" data-success="right" for="id">Identificación:</label>

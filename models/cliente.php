@@ -9,5 +9,3 @@ class Cliente{
     public $tel;
   
 }
-
-?>

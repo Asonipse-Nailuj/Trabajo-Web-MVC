@@ -7,10 +7,11 @@ require "views/header.php";
 <div class="card shadow my-5 ml-5 mr-5" align="center">
   <div class="card-header py-3">
     <h2 class="m-0 font-weight-bold text-primary">Registrar Producto</h2>
+    <span><?php echo $this->mensaje; ?></span>
   </div>
   <div class="card-body">
     <!-- FORM -->
-    <form ACTION="" METHOD="POST">
+    <form ACTION="<?php echo constant('URL'); ?>nuevoproducto/registrarProducto" METHOD="POST">
 
       <div class="md-form mb-5 col-4">
         <label data-error="wrong" data-success="right" for="nombre">Nombre:</label>
@@ -34,11 +35,15 @@ require "views/header.php";
 
       <div class="md-form mb-5 col-4">
         <label data-error="wrong" data-success="right" for="categoria">Categoria:</label>
-        <select name="categoria" id="categoria" class="form-control" required>
-          <option value="" selected>Seleccione una categoria</option>
-          <option value="">#</option>
-          <option value="">#</option>
-
+        <select name="categoria" id="select_categoria" class="form-control" required>
+          <?php
+          foreach ($this->categorias as $row) {
+            $categoria = new Categoria();
+            $categoria = $row;
+          ?>
+            <option value="<?php echo $categoria->id; ?>"><?php echo $categoria->nom; ?></option>
+          <?php
+          } ?>
         </select>
       </div>
 

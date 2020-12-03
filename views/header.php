@@ -58,14 +58,14 @@
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Clientes</a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo constant('URL') . "nuevo/nuevoCliente"; ?>">Registrar</a></li>
+                                <li><a href="<?php echo constant('URL') . "nuevocliente"; ?>">Registrar</a></li>
                                 <li><a href="<?php echo constant('URL') . "consulta/verClientes"; ?>">Consultar</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Productos</a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo constant('URL') . "nuevo/nuevoProducto"; ?>">Registrar</a></li>
+                                <li><a href="<?php echo constant('URL') . "nuevoproducto"; ?>">Registrar</a></li>
                                 <li><a href="<?php echo constant('URL') . "consulta/verProductos"; ?>">Consultar</a></li>
                             </ul>
                         </li>

@@ -1,13 +1,17 @@
 <?php
-class Nuevo extends Controller{
+class NuevoCliente extends Controller
+{
 
-    function __construct(){
+    function __construct()
+    {
         parent::__construct();
         $this->view->mensaje = "";
-        
-        //echo "<p>Nuevo controlador Main</p>";
     }
 
+    function render()
+    {
+        $this->view->render("nuevocliente/index");
+    }
 
     function registrarCliente()
     {
@@ -17,9 +21,7 @@ class Nuevo extends Controller{
         $telefono  = $_POST['telefono'];
         $direccion  = $_POST['direccion'];
 
-        $mensaje = "";
-
-        if ($this->model->insertCliente(['cod' => $codigo, 'nom' => $nombre, 'ape' => $apellido, 'tel' => $telefono, 'direc' => $direccion])) {
+        if ($this->model->insert(['cod' => $codigo, 'nom' => $nombre, 'ape' => $apellido, 'tel' => $telefono, 'direc' => $direccion])) {
             $mensaje = "Nuevo cliente creado";
         } else {
 
@@ -27,13 +29,6 @@ class Nuevo extends Controller{
         }
 
         $this->view->mensaje = $mensaje;
-        $this->view->render('nuevo/cliente');
-    }
-
-    function nuevoProducto()
-    {
-        $this->view->render("nuevo/producto");
+        $this->render();
     }
 }
-
-?>
