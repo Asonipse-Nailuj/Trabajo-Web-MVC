@@ -10,7 +10,7 @@ require "views/header.php";
   </div>
   <div class="card-body">
     <!-- FORM -->
-    <form ACTION="" METHOD="POST">
+		<form action="<?php echo constant('URL'); ?>nuevo/nuevoCliente" method="POST">
 
       <div class="md-form mb-5 col-3">
         <label data-error="wrong" data-success="right" for="id">Identificación:</label>
