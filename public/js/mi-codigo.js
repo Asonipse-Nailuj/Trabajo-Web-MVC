@@ -1,6 +1,7 @@
 $(document).ready(iniciar);
 
 function iniciar() {
+    
     $(".eliminar_producto").click(eliminarProducto);
     $(".eliminar_cliente").click(eliminarCliente);
 
