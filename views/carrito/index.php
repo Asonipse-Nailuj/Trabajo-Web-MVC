@@ -1,5 +1,5 @@
 <?php
-$tittle = "Clientes";
+$tittle = "Carrito";
 
 require "views/header.php";
 ?>
@@ -21,7 +21,7 @@ require "views/header.php";
                                     <th></th>
                                     <th class="font-weight-bold">
                                         <strong>Product</strong>
-                                    </th>
+                                     </th>
                                     <th class="font-weight-bold">
                                         <strong>Color</strong>
                                     </th>
@@ -46,7 +46,7 @@ require "views/header.php";
                                 <!-- First row -->
                                 <tr>
                                     <th scope="row">
-                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" alt="" class="img-fluid z-depth-0">
+                                        <img src="<?php echo constant('URL'); ?>public/images/big-img-05.jpg" alt="" class="img-fluid z-depth-0">
                                     </th>
                                     <td>
                                         <h5 class="mt-3">
@@ -73,7 +73,7 @@ require "views/header.php";
                                 <!-- Second row -->
                                 <tr>
                                     <th scope="row">
-                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/6.jpg" alt="" class="img-fluid z-depth-0">
+                                        <img src="<?php echo constant('URL'); ?>public/images/big-img-05.jpg" alt="" class="img-fluid z-depth-0">
                                     </th>
                                     <td>
                                         <h5 class="mt-3">
@@ -100,7 +100,7 @@ require "views/header.php";
                                 <!-- Third row -->
                                 <tr>
                                     <th scope="row">
-                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" alt="" class="img-fluid z-depth-0">
+                                        <img src="<?php echo constant('URL'); ?>public/images/big-img-05.jpg" alt="" class="img-fluid z-depth-0">
                                     </th>
                                     <td>
                                         <h5 class="mt-3">
@@ -138,7 +138,7 @@ require "views/header.php";
                                         </h4>
                                     </td>
                                     <td colspan="3" class="text-right">
-                                        <button type="button" class="btn btn-primary btn-rounded">Complete purchase
+                                        <button type="button" class="btn btn-primary btn-rounded" width="50%" height="50%">Complete purchase
                                             <i class="fas fa-angle-right right"></i>
                                         </button>
                                     </td>
