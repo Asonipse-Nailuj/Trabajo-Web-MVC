@@ -1,7 +1,7 @@
 <?php
 include_once "models/carrito.php";
 
-class NuevoProductoModel extends Model{
+class CarritoModel extends Model{
 
     public function __construct()
     {

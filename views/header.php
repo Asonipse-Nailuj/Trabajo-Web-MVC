@@ -54,7 +54,7 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="nav-item active"><a class="nav-link" href="<?php echo constant('URL'); ?>main">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Carrito</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo constant('URL'); ?>carrito">Carrito</a></li>
                         <li class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Clientes</a>
                             <ul class="dropdown-menu">
